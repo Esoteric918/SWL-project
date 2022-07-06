@@ -13,7 +13,8 @@
 
 /* hero section */
 .hero_img{
-    width: 100%;
+    height: 100vh;
+    width: auto;
     /* height: 35rem; */
     background-image: url('SWL-images/hero-image.jpg');
     background-size: cover;
@@ -31,6 +32,27 @@
     height: 255px;
 
 }
+@media screen and (max-width: 1024px) {
+    .wedo_pic{
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero_img{
+        background-position: 45% 75%;
+
+    }
+
+}
+/* @media screen and (max-width: 768px) {
+    .hero_img{
+        background-position: 45% 75%;
+
+    }
+} */
+
+
+
 body {
     height: 1000px;
 }
