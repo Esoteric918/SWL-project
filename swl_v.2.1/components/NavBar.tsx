@@ -22,7 +22,6 @@ export default function NavBar() {
     <>
       <div className="flex flex-col justify-center items-center dark:bg-gradient-to-r from-red-400 to-blue-500">
         <div className="flex justify-between items-center w-full">
-          <div className="flex items-center">
             <div className="flex items-center ">
               <Image src="/SWL-images/swl-logo.jpg"
                 width={50}
@@ -35,7 +34,7 @@ export default function NavBar() {
                   dark:shadow-black'/>
               <Image src="/SWL-images/SWL-navlogo4.png" width={300} height={300} alt={""} />
             </div>
-            <div className='md:grid-col-1 content-end'>
+            <div className='invisible md:visible mr-4'>
               <Link href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless' className='text-2xl '>
                 <FontAwesomeIcon icon={faDonate} size='2xl' />
                 Donations
@@ -45,7 +44,6 @@ export default function NavBar() {
                 Contact
               </Link>
             </div>
-          </div>
           <div
             style={{ color: '#fff' }}
             onClick={handleNav}
