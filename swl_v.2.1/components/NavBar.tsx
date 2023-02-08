@@ -1,59 +1,94 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faDonate, faWindowClose, faPhone } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useEffect } from 'react'
+import { AiOutlineMenu } from 'react-icons/ai';
+import { faDonate, faContactBook } from '@fortawesome/free-solid-svg-icons';
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function NavBar() {
-  return (
-    <div className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-    <div className=" bg-red-700 ">
-      <div
-        className="bg-gradient-to-l from-rose-400 to-orange-300">
-        <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <Link href="#" className="flex items-center">
-            <Image src="/SWL-images/swl-logo.jpg" className="mr-3 h-6 sm:h-9 rounded-full" width={45} height={45} alt="SandwichesWithLove" />
-            <Image src="/SWL-images/SWL-navlogo4.png" className='mr-3 h-6 sm:h-9' width={275} height={25} alt="" />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white hidden">Sandwiches
-              With Love</span>
-          </Link >
-          <button data-collapse-toggle="mobile-menu" type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="mobile-menu" aria-expanded="false">
-            <span className="sr-only">Open main menu</span>
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </button>
-          <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-            <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-              <li>
-                <Link href="./homepage.html"
-                  className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                  aria-current="page">Home</Link >
-              </li>
+  const [nav, setNav] = useState(false);
 
-              <li>
-                <Link href="./donations.html"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Donate</Link >
-              </li>
-              <li>
-                <Link href="./contact.html"
-                  className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</Link >
-              </li>
-            </ul>
+
+
+  console.log(nav);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  return (
+    <>
+      <div className="flex flex-col justify-center items-center dark:bg-gradient-to-r from-red-400 to-blue-500">
+        <div className="flex justify-between items-center w-full">
+          <div className="flex items-center">
+            <div className="flex items-center ">
+              <Image src="/SWL-images/swl-logo.jpg"
+                width={50}
+                height={50}
+                alt={""}
+                className='
+                  rounded-full
+                  m-2
+                  dark:shadow-md
+                  dark:shadow-black'/>
+              <Image src="/SWL-images/SWL-navlogo4.png" width={300} height={300} alt={""} />
+            </div>
+            <div className='md:grid-col-1 content-end'>
+              <Link href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless' className='text-2xl '>
+                <FontAwesomeIcon icon={faDonate} size='2xl' />
+                Donations
+              </Link>
+              <Link href='/Contact' className='text-2xl'>
+                <FontAwesomeIcon icon={faContactBook} size='2xl' />
+                Contact
+              </Link>
+            </div>
+          </div>
+          <div
+            style={{ color: '#fff' }}
+            onClick={handleNav}
+            className='md:hidden'
+          >
+            <AiOutlineMenu size={25} />
+          </div>
+          <div
+
+            className={
+              nav
+                ? 'md:hidden fixed left-0 top-0 w-3/4 h-screen bg-red-200 z-10'
+                : 'hidden'
+            } >
+            <div className='flex justify-center '>
+              <Image
+                className='
+                  mt-5
+                  rounded-full
+                  dark:shadow-md
+                dark:shadow-black'
+                src="/SWL-images/swl-logo.jpg"
+                width={100}
+                height={100}
+                alt={'logo'}
+              />
+            </div>
+
+            <div className='grid grid-cols-1 ml-4 mt-3 gap-2'>
+              {/* set route to donate page */}
+              <Link href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless' className='text-2xl '>
+                <FontAwesomeIcon icon={faDonate} size='2xl' />
+                Donations
+              </Link>
+              <Link href='https://www.facebook.com/sandwicheswithlove' type='email' className='text-2xl'>
+                <FontAwesomeIcon icon={faContactBook} size='2xl' />
+                Contact
+              </Link>
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </>
   );
 }

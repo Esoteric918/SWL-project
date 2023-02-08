@@ -2,29 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-1. header
-2. body
-
-*/
-
-:root{
-
-}
-
-/*  header  */
-
 
 /* hero section */
-.hero_img{
-    height: 100vh;
-    width: auto;
-    /* height: 35rem; */
-    background-image: url('/SWL-images/hero_image');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}   /*  end of hero_image  */
+.hero_img {
+  background-image: '/SWL-images/hero-image.jpg';
+  height: 500px;
+  /* z-index: 0; */
+}
 
 .hero_item {
     font-family: 'Permanent Marker', cursive;
