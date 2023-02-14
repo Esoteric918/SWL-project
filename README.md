@@ -1,3 +1,9 @@
+# Sandwiches With Love
+  Is a Charity that helps the homeless and the less fortunate. They provide food, tents, petfood and other necessities to those in need.
+  I have created a website for them to help them raise funds and awareness. The website is built with Next.js and TailwindCSS.
+  The website is hosted on Netlify.
+  The website is fully responsive and works on all devices.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -36,3 +42,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/318420fb-7bce-4247-8437-c3493bcf85a4/deploy-status)](https://app.netlify.com/sites/glittering-sawine-a52d77/deploys)
