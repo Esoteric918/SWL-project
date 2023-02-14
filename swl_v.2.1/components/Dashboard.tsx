@@ -8,7 +8,7 @@ import HighLights from "./HighLights";
 export default function Dashboard() {
   return (
     <>
-      <div className="sm:bg-contained bg-[url('/SWL-images/hero-image.jpg')] bg-no-repeat bg-center bg bg-cover " id="home">
+      <div className=" bg-[url('/SWL-images/hero-image.jpg')] bg-no-repeat bg-center bg bg-cover " id="home">
 
       <div className="text-center h-full " id="home">
 

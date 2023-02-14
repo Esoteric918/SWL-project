@@ -32,14 +32,14 @@ export default function NavBar() {
                   m-2
                   dark:shadow-md
                   dark:shadow-black'/>
-              <Image src="/SWL-images/SWL-navlogo4.png" width={300} height={300} alt={""} />
+              <Image src="/SWL-images/SWL-navlogo4.png" width={400} height={300} alt={""} />
             </div>
             <div className='invisible md:visible mr-4'>
               <Link href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless' className='text-2xl '>
                 <FontAwesomeIcon icon={faDonate} size='2xl' />
                 Donations
               </Link>
-              <Link href='/Contact' className='text-2xl'>
+              <Link href='atarianne@icloud.com' type='email' className='text-2xl'>
                 <FontAwesomeIcon icon={faContactBook} size='2xl' />
                 Contact
               </Link>
