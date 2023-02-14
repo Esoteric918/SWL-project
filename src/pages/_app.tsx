@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <Dashboard />
     <Component {...pageProps} />
     <Contact />
-    <Footer /></>
+    <Footer />
+    </>
     )
 }
