@@ -39,7 +39,7 @@ export default function NavBar() {
                 <FontAwesomeIcon icon={faDonate} size='2xl' />
                 Donations
               </Link>
-              <Link href='atarianne@icloud.com' type='email' className='text-2xl'>
+              <Link href='https://www.facebook.com/sandwicheswithlove' className='text-2xl'>
                 <FontAwesomeIcon icon={faContactBook} size='2xl' />
                 Contact
               </Link>
@@ -74,11 +74,11 @@ export default function NavBar() {
 
             <div className='grid grid-cols-1 ml-4 mt-3 gap-2'>
               {/* set route to donate page */}
-              <Link href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless' className='text-2xl '>
+              <Link href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless' className='text-lg '>
                 <FontAwesomeIcon icon={faDonate} size='2xl' />
                 Donations
               </Link>
-              <Link href='https://www.facebook.com/sandwicheswithlove' type='email' className='text-2xl'>
+              <Link href='https://www.facebook.com/sandwicheswithlove' className='text-lg'>
                 <FontAwesomeIcon icon={faContactBook} size='2xl' />
                 Contact
               </Link>

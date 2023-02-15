@@ -10,7 +10,7 @@ export default function Dashboard() {
     <>
       <div className=" bg-[url('/SWL-images/hero-image.jpg')] bg-no-repeat bg-center bg bg-cover " id="home">
 
-      <div className="text-center h-full " id="home">
+      <div className="text-center h-full text-white " id="home">
 
         <h1 className="lg:text-7xl text-lg font-bold pt-6 hero_item ">What we do!</h1>
 

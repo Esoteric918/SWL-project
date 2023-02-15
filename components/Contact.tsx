@@ -58,7 +58,7 @@ const Contact = () => {
                   ><FontAwesomeIcon icon={faInstagram} />
                   </button>
                 </Link>
-                <Link href={'atarianne@icloud.com'} type='email' >
+                <Link href={'https://www.facebook.com/sandwicheswithlove'} >
                   <button
                       className="
                       bg-amber-300
