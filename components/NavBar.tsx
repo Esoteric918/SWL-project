@@ -32,16 +32,31 @@ export default function NavBar() {
                   m-2
                   dark:shadow-md
                   dark:shadow-black'/>
-              <Image src="/SWL-images/SWL-navlogo4.png" width={400} height={300} alt={""} />
+              <Image src="/SWL-images/SWL-navlogo4.png" width={400} height={300} alt={"logo"} />
             </div>
-            <div className='invisible md:visible mr-4'>
-              <Link href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless' className='text-2xl '>
-                <FontAwesomeIcon icon={faDonate} size='2xl' />
-                Donations
+            <div className='invisible md:visible mr-4 my-2 flex justify-evenly gap-6'>
+             <Link
+                href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless'
+                id='donate'
+                className='
+                  text-lg
+                  text-white
+                  w-10
+                  h-10
+                  '>
+                <FontAwesomeIcon icon={faDonate} />
+
               </Link>
-              <Link href='https://www.facebook.com/sandwicheswithlove' className='text-2xl'>
-                <FontAwesomeIcon icon={faContactBook} size='2xl' />
-                Contact
+              <Link
+                href='https://www.facebook.com/sandwicheswithlove'
+                id='contact'
+                className='
+                  text-lg
+                  text-white
+                  w-10
+                  h-10'>
+                <FontAwesomeIcon icon={faContactBook} />
+
               </Link>
             </div>
           <div
@@ -55,7 +70,7 @@ export default function NavBar() {
 
             className={
               nav
-                ? 'md:hidden fixed left-0 top-0 w-3/4 h-screen bg-red-200 z-10'
+                ? 'md:hidden fixed left-0 top-0 w-3/4 h-screen bg-red-300 z-10'
                 : 'hidden'
             } >
             <div className='flex justify-center '>
@@ -72,14 +87,27 @@ export default function NavBar() {
               />
             </div>
 
-            <div className='grid grid-cols-1 ml-4 mt-3 gap-2'>
+            <div className='grid grid-cols-1 ml-4 mt-3 gap-8 text-lg text-white'>
               {/* set route to donate page */}
-              <Link href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless' className='text-lg '>
-                <FontAwesomeIcon icon={faDonate} size='2xl' />
+              <Link
+                href='https://www.gofundme.com/f/yrybv-sandwiches-4-the-homeless'
+                className='
+                  text-lg
+                  text-white
+                  w-16
+                  h-16
+                  '>
+                <FontAwesomeIcon icon={faDonate} />
                 Donations
               </Link>
-              <Link href='https://www.facebook.com/sandwicheswithlove' className='text-lg'>
-                <FontAwesomeIcon icon={faContactBook} size='2xl' />
+              <Link
+                href='https://www.facebook.com/sandwicheswithlove'
+                className='
+                  text-lg
+                  text-white
+                  w-16
+                  h-16'>
+                <FontAwesomeIcon icon={faContactBook} />
                 Contact
               </Link>
 

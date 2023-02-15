@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HighLights from "./HighLights";
-
+import Contact from 'components/Contact'
 
 export default function Dashboard() {
   return (
@@ -12,9 +12,9 @@ export default function Dashboard() {
 
       <div className="text-center h-full text-white " id="home">
 
-        <h1 className="lg:text-7xl text-lg font-bold pt-6 hero_item ">What we do!</h1>
+        <h1 className="lg:text-7xl text-lg font-bold pt-6 ">What we do!</h1>
 
-        <div className="hero_item grid gap-4 md:grid-cols-4 sm:grid-cols-2 grid-col-1 items-center justify-between m-24">
+        <div className="grid gap-4 md:grid-cols-4 sm:grid-cols-2 grid-col-1 items-center justify-between m-24">
           <section className="text-center justify-center">
             <h2>Helping People</h2>
             <p >Getting food and suppies to the homeless</p>
@@ -40,6 +40,7 @@ export default function Dashboard() {
       </div>
       <HighLights />
       </div>
+      <Contact />
     </>
   );
 }

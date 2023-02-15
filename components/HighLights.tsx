@@ -15,7 +15,7 @@ function HighLights() {
         gap-3
         w-auto h-auto
         py-3
-        ml-32
+        ml-24
         content-center
         pb-10
         ">
@@ -26,7 +26,7 @@ function HighLights() {
               <Image
                 src="/SWL-images/content-pic3.jpg"
                 alt={"highlights"}
-                className="object-cover "
+                className=" "
                 width={200}
                 height={200}
               ></Image>
@@ -48,7 +48,7 @@ function HighLights() {
             <Image
               src="/SWL-images/content-pic10.jpg"
               alt={"highlights"}
-              className="object-cover "
+              className=" "
               width={200}
               height={200}
             ></Image>
@@ -69,7 +69,7 @@ function HighLights() {
               <Image
                 src="/SWL-images/content-pic9.jpg"
                 alt={"highlights"}
-                className="object-cover "
+                className=" "
                 width={200}
                 height={200}
               ></Image>
@@ -90,7 +90,7 @@ function HighLights() {
               <Image
                 src="/SWL-images/content-pic8.png"
                 alt={"highlights"}
-                className="object-cover "
+                className=" "
                 width={200}
                 height={200}
               ></Image>
