@@ -25,14 +25,14 @@ function HighLights() {
             <div className=" ">
               <Image
                 src="/SWL-images/content-pic3.jpg"
-                alt={"highlights"}
+                alt={"two people next to each other"}
                 className=" "
                 width={200}
                 height={200}
               ></Image>
             </div>
             <div className="">
-              <h3 className="text-xl font-semibold px-1">
+              <h3 className="text-xl font-semibold px-1 a">
                 Making a differnce in our community
               </h3>
               <p className="text-sm px-1">
